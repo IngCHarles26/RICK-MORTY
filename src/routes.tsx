@@ -14,7 +14,7 @@ export const routes = {
 
 export const router = createBrowserRouter([
   {
-    path:'',
+    path:'https://rick-morty-git-main-carloscodevs-projects.vercel.app/',
     element: <App />,
     children:[
       {
