@@ -1,0 +1,35 @@
+.Landing{
+  // margin-top: min(20vh,10%);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  > img{
+    margin: 0;
+    width: 50%;
+    min-width: 600px;
+  }
+  > p{
+    color: white;
+    font-family: 'Gugi', Times, serif;
+    margin-bottom: 2rem;
+  }
+  > p:nth-of-type(2){
+    font-size: 2rem;
+    margin-bottom: 4rem;
+  }
+}
+
+.jello-horizontal{
+  animation:jello-horizontal 2s linear infinite} 
+
+  @keyframes jello-horizontal{
+    0%{transform:scale3d(1,1,1)}
+    30%{transform:scale3d(1.25,.75,1)}
+    40%{transform:scale3d(.75,1.25,1)}
+    50%{transform:scale3d(1.15,.85,1)}
+    65%{transform:scale3d(.95,1.05,1)}
+    75%{transform:scale3d(1.05,.95,1)}
+    100%{transform:scale3d(1,1,1)}
+}

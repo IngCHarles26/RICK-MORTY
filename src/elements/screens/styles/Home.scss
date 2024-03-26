@@ -1,0 +1,14 @@
+.Home{
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .Logo{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+.hiddenOver{
+  overflow: hidden;
+}

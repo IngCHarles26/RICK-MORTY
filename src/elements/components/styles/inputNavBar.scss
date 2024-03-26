@@ -1,0 +1,43 @@
+.inputNavBar {
+  --width-of-input: 200px;
+  --border-height: 1px;
+  --border-before-color: rgba(221, 221, 221, 0.39);
+  --border-after-color: #5891ff;
+  --input-hovered-color: #4985e01f;
+  position: relative;
+  width: var(--width-of-input);
+
+  >input {
+    color: #fff;
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+    border-bottom: var(--border-height) solid var(--border-before-color);
+    &:hover {
+      background: var(--input-hovered-color);
+    }
+    &:focus {
+      outline: none;
+    } 
+    input:focus ~ .input-border {
+      width: 100%;
+    }
+  }
+}
+ /* styling of Input */
+ /* styling of animated border */
+ /* Hover on Input */
+
+ 
+
+ /* here is code of animated border */
+
+ /* === if you want to do animated border on typing === */
+ /* remove input:focus code and uncomment below code */
+ /* input:valid ~ .input-border{
+   width: 100%;
+ } */

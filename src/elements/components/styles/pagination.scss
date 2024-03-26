@@ -1,0 +1,36 @@
+.pagination{
+  position: fixed;
+  z-index: 50;
+  bottom: 1rem;
+  align-self: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+  .prev{
+    transform: rotate(180deg);
+  }
+  
+  .pages{
+    display: flex;
+    gap: 1rem;
+    >button{
+      color: white;
+      padding: 0.5rem 1.2rem;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      background: #35353590;
+      cursor: pointer;
+      border: 1px solid #e8e8e840;
+      transition: all 0.3s;
+      box-shadow: 2px 2px 12px #9ee5fa80, -2px -2px 2px #9ee5fa80;
+      &:active{
+        color: #9ee5fa80;
+        box-shadow: inset 1px 1px 12px #9ee5fa80, inset -1px -1px 12px #9ee5fa80;
+      }
+    }
+    .selectedPage{
+      background-color: #00ff0050;
+    }
+  }
+}
