@@ -3,7 +3,6 @@ import App from "./App";
 import Landing from "./elements/screens/Landing";
 import Home from "./elements/screens/Home";
 import Error from "./elements/screens/Error";
-import Detail from "./elements/screens/Detail";
 import About from "./elements/screens/About";
 
 export const routes = {

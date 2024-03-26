@@ -8,12 +8,11 @@ import { TypeStore } from '../../redux/store';
 import { filterRepeatedIds, getRandomId, toPutFirst, transInputIds } from '../../api/helpers/funcs';
 import { RiMoApi, apiRoutes, maxId } from '../../api/api';
 import { addCharacters, setFilters, setIdCharacters, setSearchInput } from '../../redux/slices/charactersSlice';
-import { setCurrentPage, setTotalCards } from '../../redux/slices/pageSlice';
+import { setCurrentPage } from '../../redux/slices/pageSlice';
 
 function NavBar() {
   const dispatch = useDispatch();
   const {searchInput,searchType,idCharacters,species,origin,gender,filters} = useSelector((st:TypeStore)=>st.character);
-  const {totalCards} = useSelector((st:TypeStore)=>st.page)
 
 
   const handleSearch = async ()=>{

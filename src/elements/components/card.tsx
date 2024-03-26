@@ -1,4 +1,3 @@
-import { defData } from '../../api/data';
 import './styles/card.scss';
 import imgSpecie from '../../assets/huella.png';
 import imgGender from '../../assets/simbolos-de-genero.png';

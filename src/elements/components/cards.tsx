@@ -11,7 +11,7 @@ import { setTotalCards } from '../../redux/slices/pageSlice';
 
 function Cards() {
   const dispatch = useDispatch();
-  const {characters,filteredChars,idCharacters} = useSelector((st:TypeStore)=>st.character);
+  const {characters,filteredChars} = useSelector((st:TypeStore)=>st.character);
   const {currentPage,cardPerPage} = useSelector((st:TypeStore)=>st.page)
   const start = (currentPage-1)*cardPerPage;
   const end = currentPage * cardPerPage;
